@@ -2,11 +2,13 @@
   --primary-color: #6c63ff;
   --secondary-color: #f5f2fe;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  --text-align:center;
 }
 
 body {
   margin: 60px auto;
   max-width: 800px;
+  display:var(--text-align);
 }
 
 h1,
@@ -95,21 +97,18 @@ p {
   text-decoration: underline;
 }
 
-@media (max-width: 576px){
-  p{
-    color:blue;
-    text-align:center;
-
+@media (max-width: 576px) {
+  p {
+    color: blue;
+    text-align: center;
   }
 
-  img{
-    display:none;
+  img {
+    display: none;
   }
 
-  .navigation-links-descritpions{
-    text-align:center;
-    display:flex;
+  .navigation-links-descritpions {
+    text-align: center;
+    display: flex;
   }
-
-  
 }
